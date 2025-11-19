@@ -11,8 +11,8 @@
 `define BROM_INIT_FILE "bootrom.hex"
 `endif
 
-module brom_mmio #(
-    parameter [31:0]  BROM_ADDR     = 32'h8000_0000,        // Boot ROM base address
+module mrom_mmio #(
+    parameter [31:0]  BROM_ADDR     = 32'h2000_0000,        // Boot ROM base address
     parameter [31:0]  BASE_ADDR     = 32'h8100_5000,        // Boot ROM csr address
     parameter [31:0]  ROM_SIZE      = `BROM_DEFAULT_SIZE,   // ROM size in bytes
     parameter         INIT_FILE     = `BROM_INIT_FILE,      // Initialization file
